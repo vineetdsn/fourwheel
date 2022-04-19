@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="webthemez">
+        <title>
+            {% block title %}fourwheel{% endblock %}
+        </title>
+        <!-- core CSS -->
+        <link href="{% static 'css/bootstrap2.min.css' %} " rel="stylesheet">
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/styles2.css' %}" rel="stylesheet">
+    </head>
+    <body id="home">
+        <header id="header">
+            <nav id="main-nav"
+                 class="navbar navbar-default navbar-fixed-top"
+                 role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button"
+                                class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="{% static 'images/fourwheel.png' %}" alt="logo" height="50">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            {% block nav %}
+                                <li class="scroll active">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li class="scroll">
+                                    <a href="{% url 'newcar' %}">Newly Added Car</a>
+                                </li>
+                                <li class="scroll">
+                                    <a href="{% url 'popularcar' %}">Popular car</a>
+                                </li>
+                                <li class="scroll">
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                                <li class="scroll">
+                                    <a href="{% url 'car_list' %}">Car List</a>
+                                </li>
+                                <li class="scroll">
+                                    <a href="{% url 'logout' %}">Logout</a>
+                                </li>
+                            {% endblock nav %}
+                            <li class="scroll">
+                                {% block search %}
+                                    <!-- search box-->
+                                    <form method="GET" class="form-inline" role="search">
+                                        <div class="form-group">
+                                            <input type="text"
+                                                   class="form-control"
+                                                   placeholder="Car Search"
+                                                   value="{{ request.GET.q }}"
+                                                   name="q">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <span class="glyphicon glyphicon-search"></span> Search
+                                    </button>
+                                </form>
+                            {% endblock search %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
+    <div class="container ">
+        {% block body %}{% endblock %}
+    </div>
+    {% comment %}
+        <!--/#bottom-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2022 Company Name. Template by <a target="_blank" href="#">fourwheel</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer> {% endcomment %}
+    <!--/#footer-->
+</body>
+</html>

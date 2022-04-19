@@ -1,0 +1,31 @@
+{% extends 'base2.html' %}
+{% load crispy_forms_tags %}
+{% block title %}{{ title }}{% endblock %}
+{% block search %}{% endblock %}
+{% block nav %}
+    <li class="scroll">
+        <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="scroll">
+        <a href="{% url 'car_list' %}">Car List</a>
+    </li>
+    <li class="scroll">
+        <a href="{% url 'login' %}">Login</a>
+    </li>
+    <li class="scroll">
+        <a href="{% url 'register' %}">Register</a>
+    </li>
+{% endblock nav %}
+{% block body %}
+    <div class ='col-sm-5 col-sm-offset-3 '>
+        <h1>{{ title }}</h1>
+        <hr>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="pull-right">
+                <input type="submit" class="btn btn-primary" value="{{ title }}"/>
+            </div>
+        </form>
+    </div>
+{% endblock %}

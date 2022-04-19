@@ -1,0 +1,40 @@
+{% extends 'base2.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Add Car{% endblock %}
+{% block search %}{% endblock %}
+{% block nav %}
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="scroll">
+                <a href="{% url 'adminIndex' %}">Car List</a>
+            </li>
+            <li class="scroll">
+                <a href="{% url 'order_list' %}">Order List</a>
+            </li>
+            <li class="scroll">
+                <a href="{% url 'message' %}">Message</a>
+            </li>
+            <li class="scroll">
+                <a href="{% url 'car_create' %}">Add Car</a>
+            </li>
+            <li class="scroll">
+                <a href="{% url 'logout' %}">Logout {{ request.user.username }}</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+{% block body %}
+    <div class ='col-sm-6 col-sm-offset-3'>
+        <div class="panel panel-primary">
+            <div class="list-group-item active">
+                <strong><span class="glyphicon glyphicon-film"></span> Car Create</strong>
+            </div>
+            <br>
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" class='btn btn-primary' value="Add Car">
+            </form>
+        </div>
+    </div>
+{% endblock %}

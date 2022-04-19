@@ -1,0 +1,496 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="webthemez">
+        <title>Four Wheel</title>
+        <!-- core CSS -->
+        <link href="{% static 'css/bootstrap2.min.css' %} " rel="stylesheet">
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/styles2.css' %}" rel="stylesheet">
+    </head>
+    <body id="home">
+        <header id="header">
+            <nav id="main-nav"
+                 class="navbar navbar-default navbar-fixed-top"
+                 role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button"
+                                class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="{% static 'images/fourwheel.png' %}" alt="logo" height="60">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="scroll active">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="scroll">
+                                <a href="#services">Services</a>
+                            </li>
+                            <li class="scroll">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="scroll">
+                                <a href="#contact-us">Contact</a>
+                            </li>
+                            <li class="scroll">
+                                <a href="{% url 'car_list' %}">Car List</a>
+                            </li>
+                            <li class="scroll">
+                                <a href="{% url 'login' %}">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.container-->
+            </nav>
+            <!--/nav-->
+        </header>
+        <!--/header-->
+        <section id="hero-banner">
+            <div class="banner-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <br>
+                            <br>
+                            <h2>Drive On Rent</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elitsd
+                            </p>
+                            <a class="btn btn-primary btn-lg" href="#pricing">Showroom</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title wow fadeInDown">Our Services</h2>
+                    <p class="wow fadeInDown">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
+                        risus vitae massa
+                        <br>
+                        semper aliquam quis mattis quam.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="features">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="0ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-futbol-o"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Car Wash</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="100ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-compass"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Car Repair</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Painting</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-bar-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Denting</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="400ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-paper-plane-o"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Washing</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6 wow fadeInUp"
+                             data-wow-duration="300ms"
+                             data-wow-delay="500ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-bullseye"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Polishing</h4>
+                                    <p>
+                                        Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut
+                                        euismod
+                                        massa, eu eleifend ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-md-4-->
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+        <!--/#services-->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title wow fadeInDown">About Us</h2>
+                    <p class="wow fadeInDown">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
+                        risus vitae massa
+                        <br>
+                        semper aliquam quis mattis quam.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 wow fadeInLeft">
+                        <img class="img-responsive" src="{% static 'images/about.png' %}" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
+                            semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit
+                            lectus. Phasellus ut euismod massa, eu eleifend ipsum.
+                        </p>
+                        <p>
+                            Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat
+                            ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem
+                            a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum.
+                        </p>
+                        <p>
+                            Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci
+                            adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.
+                        </p>
+                        <a class="btn btn-primary" href="#contact-us">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/#about-->
+        <section id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title wow fadeInDown">Gallery</h2>
+                    <p class="wow fadeInDown">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
+                        risus vitae massa
+                        <br>
+                        semper aliquam quis mattis quam.
+                    </p>
+                </div>
+                <div class="text-center" style="display:none">
+                    <ul class="portfolio-filter">
+                        <li>
+                            <a class="active" href="#" data-filter="*">All Works</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".designing">Designing</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".mobile">Mobile App</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".development">Development</a>
+                        </li>
+                    </ul>
+                    <!--/#portfolio-filter-->
+                </div>
+                <div class="portfolio-items">
+                    <div class="portfolio-item designing">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/01.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/01.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item mobile development">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/02.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/02.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item designing">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/03.jpg' %} "
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/03.jpg' %} "
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item mobile">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/04.jpg' %} "
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/04.jpg' %} "
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item designing development">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/05.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/05.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item mobile">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/06.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/06.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item designing development">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/07.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/07.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item mobile">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive"
+                                 src="{% static 'images/portfolio/08.jpg' %}"
+                                 alt="">
+                            <div class="portfolio-info">
+                                <a class="preview"
+                                   href="{% static 'images/portfolio/08.jpg' %}"
+                                   rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                </div>
+            </div>
+            <!--/.container-->
+        </section>
+        <section id="contact-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title wow fadeInDown">
+                        Contact Us
+                    </h2>
+                    <p class="wow fadeInDown">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget
+                        risus vitae massa
+                        <br>
+                        semper aliquam quis mattis quam.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--/#contact-us-->
+        <section id="contact">
+            <div class="container">
+                <div class="container contact-info">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="contact-form">
+                                <h3>
+                                    Workshop Address
+                                </h3>
+                                <address>
+                                    <strong>Motor Car Servecing, Inc.</strong>
+                                    <br>
+                                    12345 NewYork, Street 125
+                                    <br>
+                                    United States 94107
+                                    <br>
+                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <div class="contact-form">
+                            <form method="POST"
+                                  id="contact-form"
+                                  class="form-horizontal"
+                                  action="contactengine.php"
+                                  onSubmit="alert('Thank you for your feedback!');">
+                                <div>
+                                    <input type="text"
+                                           name="Name"
+                                           id="Name"
+                                           class="form-control wow fadeInUp"
+                                           placeholder="Name"
+                                           required/>
+                                </div>
+                                <div>
+                                    <input type="text"
+                                           name="Email"
+                                           id="Email"
+                                           class="form-control wow fadeInUp"
+                                           placeholder="Email"
+                                           required/>
+                                </div>
+                                <div>
+                                    <textarea name="Message"
+                                              rows="8"
+                                              cols="20"
+                                              id="Message"
+                                              class="form-control input-message wow fadeInUp"
+                                              placeholder="Message"
+                                              required></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit"
+                                           name="submit"
+                                           value="Submit"
+                                           class="btn btn-lg btn-primary"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2022 Company Name. Template by <a target="_blank" href="#">fourwheel</a>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+</body>
+</html>
