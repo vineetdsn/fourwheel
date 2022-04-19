@@ -16,6 +16,12 @@ A Car on Rent web application named Fourwheel made with the use of django framew
 - Registraion 
 - login
 
+## Tech Stack
+
+**Framework:** Django
+**Language:** Python, Javascript
+**Database:** Sqlite
+**others:** Html, Css, Bootstrap
 
 ## Screenshots
 <h3>HomePage</h3>
