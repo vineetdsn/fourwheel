@@ -24,7 +24,7 @@ A Car on Rent web application named Fourwheel made with the use of django framew
 **others:** Html, Css, Bootstrap
 
 ## Screenshots
-<h3>HomePage</h3>
+<h3>HomeP
 
 ![App Screenshot](fourwheel/Screenshot/Homepage.png)
 
